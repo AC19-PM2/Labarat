@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include "head.h"
+#include "func.h"
 
 using namespace std;
 
