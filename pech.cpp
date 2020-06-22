@@ -18,17 +18,18 @@ int pech (char *nameopen) {
 	fstream pr;
 	pr.open(nameopen, ios::in);
 	if (!pr) {
-		cout<<"Îøèáêà â çàäàííîì èìåíè ôàéëà."<<endl;
+		cout<<"ÐžÑˆÐ¸Ð±ÐºÐ° Ð² Ð·Ð°Ð´Ð°Ð½Ð½Ð¾Ð¼ Ð¸Ð¼ÐµÐ½Ð¸ Ñ„Ð°Ð¹Ð»Ð°."<<endl;
 		return 0;
 	}
 	while(pr>>detail.name>>detail.material>>detail.weight>>detail.v){
 		N++;
 		k++;
-		cout<<"Äåòàëü íîìåð "<<k<<endl;
+		cout<<"Ð”ÐµÑ‚Ð°Ð»ÑŒ Ð½Ð¾Ð¼ÐµÑ€ "<<k<<endl;
 		detail.pechat_det();
 	} 
 	pr.close();
 	return N;
 } 
+
 
 

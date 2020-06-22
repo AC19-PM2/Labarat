@@ -15,7 +15,7 @@ int udalenie(char *nameopen){
 	cout<<N<<endl;
 	details *detail;
 	detail=new details[N];
-	cout<<"Ââåäèòå íîìåð äåòàëè, êîòîðóþ õîòèòå óäàëèòü : "<<endl;
+	cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð´ÐµÑ‚Ð°Ð»Ð¸, ÐºÐ¾Ñ‚Ð¾Ñ€ÑƒÑŽ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ : "<<endl;
 	cin>>d;
 	fstream udal;
 	udal.open(nameopen, ios::in);
@@ -36,5 +36,6 @@ int udalenie(char *nameopen){
 	delete [] detail;
 	return 0;	
 }
+
 
 

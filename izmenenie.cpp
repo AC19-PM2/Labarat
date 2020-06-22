@@ -13,7 +13,7 @@ int izm(char *nameopen){
 	double newweight, newv;
 	N=pech(nameopen);
 	details *detail=new details[N];
-	cout<<"Âûáåðèòå äåòàëü, êîòîðóþ õîòèòå èçìåíèòü :";
+	cout<<"Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð´ÐµÑ‚Ð°Ð»ÑŒ, ÐºÐ¾Ñ‚Ð¾Ñ€ÑƒÑŽ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð¸Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ :";
 	cin>>iz;
 	cout<<endl;
 	fstream izmen;
@@ -22,24 +22,24 @@ int izm(char *nameopen){
 		izmen>>detail[i].name>>detail[i].material>>detail[i].weight>>detail[i].v;
 	} 
 	
-	cout<<"Êàêîé ïàðàìåòð âû õîòèòå èçìåíèòü :"<<endl;
-	cout<<" 1. Íàçâàíèå"<<endl;
-	cout<<" 2. Ìàòåðèàë"<<endl;
-	cout<<" 3. Âåñ"<<endl;
-	cout<<" 4. Îáúåì"<<endl;
+	cout<<"ÐšÐ°ÐºÐ¾Ð¹ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð¸Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ :"<<endl;
+	cout<<" 1. ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ"<<endl;
+	cout<<" 2. ÐœÐ°Ñ‚ÐµÑ€Ð¸Ð°Ð»"<<endl;
+	cout<<" 3. Ð’ÐµÑ"<<endl;
+	cout<<" 4. ÐžÐ±ÑŠÐµÐ¼"<<endl;
 	cin>>a3;
 	switch(a3)
 	{
 		case(1):
 			{		
-				cout<<"Ââåäèòå íîâîå íàçâàíèå äåòàëè : ";
+				cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ð¾Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð´ÐµÑ‚Ð°Ð»Ð¸ : ";
 				cin>>newname;
 				detail[iz-1].name=newname;
 				break;	
 			}
 		case(2):
 			{
-				cout<<"Ââåäèòå íîâûé ìàòåðèàë äåòàëè : ";
+				cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ñ‹Ð¹ Ð¼Ð°Ñ‚ÐµÑ€Ð¸Ð°Ð» Ð´ÐµÑ‚Ð°Ð»Ð¸ : ";
 				cin>>newmaterial;
 				detail[iz-1].material=newmaterial;
 			
@@ -47,19 +47,19 @@ int izm(char *nameopen){
 			}
 		case(3):
 			{
-				cout<<"Ââåäèòå íîâûé âåñ äåòàëè : ";
+				cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ñ‹Ð¹ Ð²ÐµÑ Ð´ÐµÑ‚Ð°Ð»Ð¸: ";
 				cin>>newweight;
 				detail[iz-1].weight=newweight;
 				break;	
 			}
 		case(4):
 			{
-				cout<<"Ââåäèòå íîâûé îáúåì äåòàëè : ";
+				cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ñ‹Ð¹ Ð¾Ð±ÑŠÐµÐ¼ Ð´ÐµÑ‚Ð°Ð»Ð¸: ";
 				cin>>newv;
 				detail[iz-1].v=newv;
 				break;	
 			}
-		default: cout<<"\n Íåêîððåêòíûé ââîä."<<endl;
+		default: cout<<"\n ÐÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ð²Ð²Ð¾Ð´."<<endl;
 	}
 	izmen.close();
 	izmen.open(nameopen,ios::trunc);
@@ -77,6 +77,7 @@ int izm(char *nameopen){
 	
 	
 }
+
 
 
 

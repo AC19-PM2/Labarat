@@ -16,17 +16,17 @@ int search(char *nameopen)
 	double sweight,sv;
 	string sname,smaterial;
 	r.open(nameopen,ios::in);
-	cout<<"Ïî êàêîìó ïàðàìåòðó áóäåò îñóùåñòâëÿòüñÿ ïîèñê :"<<endl;
-	cout<<" 1. Ïîèñê ïî íàçâàíèþ"<<endl;
-	cout<<" 2. Ïîèñê ïî ìàòåðèàëó"<<endl;
-	cout<<" 3. Ïîèñê ïî âåñó "<<endl;
-	cout<<" 4. Ïîèñê ïî îáúåìó "<<endl;
+	cout<<"ÐŸÐ¾ ÐºÐ°ÐºÐ¾Ð¼Ñƒ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñƒ Ð±ÑƒÐ´ÐµÑ‚ Ð¾ÑÑƒÑ‰ÐµÑÑ‚Ð²Ð»ÑÑ‚ÑŒÑÑ Ð¿Ð¾Ð¸ÑÐº :"<<endl;
+	cout<<" 1. ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ"<<endl;
+	cout<<" 2. ÐœÐ°Ñ‚ÐµÑ€Ð¸Ð°Ð»"<<endl;
+	cout<<" 3. Ð’ÐµÑ "<<endl;
+	cout<<" 4. ÐžÐ±ÑŠÐµÐ¼ "<<endl;
 	cin>>a2;
 	switch(a2)
 	{
 		case(1):
 			{		
-				cout<<"Ââåäèòå íàçâàíèå äåòàëè : ";
+				cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð´ÐµÑ‚Ð°Ð»Ð¸: ";
 				cin>>sname;
 				while(r>>detail.name>>detail.material>>detail.weight>>detail.v)
 				{
@@ -41,12 +41,12 @@ int search(char *nameopen)
 					
 				}
 				if (k==0)
-				cout<<"Äåòàëåé íå íàéäåíî"<<endl;
+				cout<<"Ð”ÐµÑ‚Ð°Ð»ÐµÐ¹ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾."<<endl;
 				break;	
 			}
 		case(2):
 			{
-				cout<<"Ââåäèòå ìàòåðèàë äåòàëè : ";
+				cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°Ñ‚ÐµÑ€Ð¸Ð°Ð» Ð´ÐµÑ‚Ð°Ð»Ð¸ : ";
 				cin>>smaterial;
 				while(r>>detail.name>>detail.material>>detail.weight>>detail.v)
 				{
@@ -60,12 +60,12 @@ int search(char *nameopen)
 					
 				}
 				if (k==0)
-				cout<<"Äåòàëåé íå íàéäåíî"<<endl;
+				cout<<"Ð”ÐµÑ‚Ð°Ð»ÐµÐ¹ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾."<<endl;
 				break;	
 			}
 		case(3):
 			{
-				cout<<"Ââåäèòå âåñ äåòàëè : ";
+				cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²ÐµÑ Ð´ÐµÑ‚Ð°Ð»Ð¸ : ";
 				cin>>sweight;
 				while(r>>detail.name>>detail.material>>detail.weight>>detail.v)
 				{
@@ -78,12 +78,12 @@ int search(char *nameopen)
 					
 				}
 				if (k==0)
-				cout<<"Äåòàëåé íå íàéäåíî"<<endl;
+				cout<<"Ð”ÐµÑ‚Ð°Ð»ÐµÐ¹ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾."<<endl;
 				break;	
 			}
 		case(4):
 			{
-				cout<<"Ââåäèòå îáúåì äåòàëè : ";
+				cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¾Ð±ÑŠÐµÐ¼ Ð´ÐµÑ‚Ð°Ð»Ð¸ : ";
 				cin>>sv;
 				while(r>>detail.name>>detail.material>>detail.weight>>detail.v)
 				{
@@ -96,15 +96,16 @@ int search(char *nameopen)
 				
 				}
 				if (k==0)
-				cout<<"Äåòàëåé íå íàéäåíî"<<endl;
+				cout<<"Ð”ÐµÑ‚Ð°Ð»ÐµÐ¹ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾."<<endl;
 				break;	
 			}
-		default: cout<<"\n Íåêîððåêòíûé ââîä."<<endl;
+		default: cout<<"\n ÐÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ð²Ð²Ð¾Ð´."<<endl;
 	}
 	r.close();
 	return 0;	
 	
 	
 }
+
 
 

@@ -13,20 +13,21 @@ class details
 		double v;
 		void pechat_det()
 		{
-		cout<<"Íàçâàíèå äåòàëè - "<<name<<"; Ìàòåðèàë - "<<material<<"; Âåñ äåòàëè - "<<weight<<"; Îáúåì äåòàëè - "<<v<<endl;			
+		cout<<"ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð´ÐµÑ‚Ð°Ð»Ð¸ - "<<name<<"; ÐœÐ°Ñ‚ÐµÑ€Ð¸Ð°Ð» - "<<material<<"; Ð’ÐµÑ - "<<weight<<"; ÐžÐ±ÑŠÐµÐ¼- "<<v<<endl;			
 		}
 		void dobav_det()
 		{
-			cout<<"Ââåäèòå íàçâàíèå äåòàëè :"<<endl;
+			cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð´ÐµÑ‚Ð°Ð»Ð¸  :"<<endl;
 			cin>>name;
-			cout<<"Ââåäèòå ìàòåðèàë äåòàëè :"<<endl;
+			cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°Ñ‚ÐµÑ€Ð¸Ð°Ð» Ð´ÐµÑ‚Ð°Ð»Ð¸ :"<<endl;
 			cin>>material;
-			cout<<"Ââåäèòå âåñ äåòàëè :"<<endl;
+			cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²ÐµÑ Ð´ÐµÑ‚Ð°Ð»Ð¸ :"<<endl;
 			cin>>weight;
-			cout<<"Ââåäèòå îáúåì äåòàëè :"<<endl;
+			cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¾Ð±ÑŠÐµÐ¼ Ð´ÐµÑ‚Ð°Ð»Ð¸:"<<endl;
 			cin>>v;
 		}
 };
-int pech(int N);
+//int pech(char *nameopen);
 
 #endif
+
