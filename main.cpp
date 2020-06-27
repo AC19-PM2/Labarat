@@ -13,11 +13,12 @@ int main(int argc, char* argv[]) {
 	int N;
 	int i;
 	int a1;
-	char *nameopen=argv[1];
-	if (argc<1){
+	if (argc<2){
 		cout<<"Ошибка запуска"<<endl;
 		return -1;
 	}
+	char *nameopen=argv[1];
+	
 	
 	cout<<"1. Вывод списка всех деталей;"<<endl;
 	cout<<"2. Добавление детали в список;" <<endl;
@@ -32,7 +33,7 @@ int main(int argc, char* argv[]) {
 	{
 		cin>>a1;
 		cout<<endl;
-		system("cls");
+		system("clear");
 		switch(a1)
 		{
 			case(1):

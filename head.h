@@ -11,23 +11,12 @@ class details
 		string material;
 		double weight;
 		double v;
-		void pechat_det()
-		{
-		cout<<"Название детали - "<<name<<"; Материал - "<<material<<"; Вес - "<<weight<<"; Объем- "<<v<<endl;			
-		}
-		void dobav_det()
-		{
-			cout<<"Введите название детали  :"<<endl;
-			cin>>name;
-			cout<<"Введите материал детали :"<<endl;
-			cin>>material;
-			cout<<"Введите вес детали :"<<endl;
-			cin>>weight;
-			cout<<"Введите объем детали:"<<endl;
-			cin>>v;
-		}
+			
+    friend ostream& operator<< (ostream& os, const details& details);
+     friend istream& operator>> (istream& is, details& details);
+
 };
-//int pech(char *nameopen);
+
 
 #endif
 

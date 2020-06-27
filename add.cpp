@@ -11,8 +11,8 @@ int add(char *nameopen){
 	details detail;
 	fstream dobav;
 	dobav.open(nameopen,ios::app);
-	detail.dobav_det();
-	dobav<<detail.name<<" "<<detail.material<<" "<<detail.weight<<" "<<detail.v<<endl;
+	cin>>detail;
+	dobav<<detail;
 	dobav.close();	
 	return 0;
 }

@@ -20,7 +20,7 @@ int izm(char *nameopen){
 	fstream izmen;
 	izmen.open(nameopen,ios::in);
 		for(i=0;i<N;i++){
-		izmen>>detail[i].name>>detail[i].material>>detail[i].weight>>detail[i].v;
+		izmen>>detail[i];
 	} 
 	
 	cout<<"Какой параметр хотите изменить :"<<endl;
@@ -69,7 +69,7 @@ int izm(char *nameopen){
 	izmen.open(nameopen,ios::out);
 	for(i=0;i<N;i++)
 	{
-		izmen<<detail[i].name<<" "<<detail[i].material<<" "<<detail[i].weight<<" "<<detail[i].v<<endl;
+		izmen<<detail[i];
 	}
 	izmen.close();
 	delete [] detail;

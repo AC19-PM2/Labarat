@@ -1,9 +1,12 @@
-SRC = add.o izmenenie.o  pech.o search.o udalenie.o main.o 
+SRC = add.o izmenenie.o  pech.o search.o udalenie.o main.o details.o
 
 all : app head.h func.h
 
 app: $(SRC)
 	g++ $(SRC) -o app
+
+details.o : details.cpp
+	g++ -c -o details.o details.cpp
 
 add.o : add.cpp
 	g++ -c -o add.o add.cpp

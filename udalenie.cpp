@@ -21,7 +21,7 @@ int udalenie(char *nameopen){
 	fstream udal;
 	udal.open(nameopen, ios::in);
 	for(i=0;i<N;i++){
-		udal>>detail[i].name>>detail[i].material>>detail[i].weight>>detail[i].v;
+		udal>>detail[i];
 	} 
 	udal.close();
 	udal.open(nameopen,ios::trunc);
@@ -30,7 +30,7 @@ int udalenie(char *nameopen){
 	for(i=0;i<N;i++)
 	{
 		if((i+1!=d))
-		udal<<detail[i].name<<" "<<detail[i].material<<" "<<detail[i].weight<<" "<<detail[i].v<<endl;
+		udal<<detail[i];
 	}
 	udal.close();
 

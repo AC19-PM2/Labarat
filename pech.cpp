@@ -22,11 +22,11 @@ int pech (char *nameopen) {
 		cout<<"Ошибка в заданном имени файла."<<endl;
 		return 0;
 	}
-	while(pr>>detail.name>>detail.material>>detail.weight>>detail.v){
+	while(pr>>detail){
 		N++;
 		k++;
 		cout<<"Деталь номер "<<k<<endl;
-		detail.pechat_det();
+		cout<<detail<<endl;
 	} 
 	pr.close();
 	return N;

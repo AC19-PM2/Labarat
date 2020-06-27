@@ -29,13 +29,13 @@ int search(char *nameopen)
 			{		
 				cout<<"Введите название детали: ";
 				cin>>sname;
-				while(r>>detail.name>>detail.material>>detail.weight>>detail.v)
+				while(r>>detail)
 				{
 					
 				
 					if(sname==detail.name)
 					{	
-						detail.pechat_det();
+						cin>>detail;
 						k++;
 					}
 					
@@ -49,13 +49,13 @@ int search(char *nameopen)
 			{
 				cout<<"Введите материал детали : ";
 				cin>>smaterial;
-				while(r>>detail.name>>detail.material>>detail.weight>>detail.v)
+				while(r>>detail)
 				{
 					
 					if(smaterial==detail.material)
 					{
 						
-						detail.pechat_det();
+						cin>>detail;
 						k++;
 					}
 					
@@ -68,12 +68,12 @@ int search(char *nameopen)
 			{
 				cout<<"Введите вес детали : ";
 				cin>>sweight;
-				while(r>>detail.name>>detail.material>>detail.weight>>detail.v)
+				while(r>>detail)
 				{
 						
 					if(sweight==detail.weight)
 					{
-						detail.pechat_det();
+						cin>>detail;
 						k++;
 					}
 					
@@ -86,12 +86,12 @@ int search(char *nameopen)
 			{
 				cout<<"Введите объем детали : ";
 				cin>>sv;
-				while(r>>detail.name>>detail.material>>detail.weight>>detail.v)
+				while(r>>detail)
 				{
 					if(sv==detail.v)
 					{
 						
-						detail.pechat_det();
+						cin>>detail;
 						k++;
 					}
 				
